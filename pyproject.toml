@@ -1,0 +1,17 @@
+[build-system]
+requires = ["jupyter_packaging>=0.10,<2", "setuptools>=40.8.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.jupyter-packaging.options]
+skip-if-exists = ["jupyterlab_night_pink_theme/labextension/static/style.js"]
+ensured-targets = ["jupyterlab_night_pink_theme/labextension/static/style.js", "jupyterlab_night_pink_theme/labextension/package.json"]
+
+[tool.jupyter-packaging.builder]
+factory = "jupyter_packaging.npm_builder"
+
+[tool.jupyter-packaging.build-args]
+build_cmd = "build:prod"
+npm = ["jlpm"]
+
+[tool.check-manifest]
+ignore = ["jupyterlab_night_pink_theme/labextension/**", "yarn.lock", ".*", "package-lock.json"]

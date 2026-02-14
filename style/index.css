@@ -1,0 +1,265 @@
+/*-----------------------------------------------------------------------------
+| Copyright (c) Jupyter Development Team.
+| Distributed under the terms of the Modified BSD License.
+|
+| Night Pink Theme for JupyterLab
+| Inspired by VS Code Night Pink theme
+|----------------------------------------------------------------------------*/
+
+/* Import the base variables */
+@import url('./variables.css');
+
+/* Apply base theme styles */
+body[data-jp-theme-name='JupyterLab Night Pink'] {
+  background-color: var(--jp-layout-color0);
+  color: var(--jp-ui-font-color0);
+}
+
+/* Scrollbar styling */
+body[data-jp-theme-name='JupyterLab Night Pink'] ::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  background-color: var(--jp-scrollbar-background-color);
+}
+
+body[data-jp-theme-name='JupyterLab Night Pink'] ::-webkit-scrollbar-thumb {
+  background-color: rgba(var(--jp-scrollbar-thumb-color), 0.5);
+  border-radius: var(--jp-scrollbar-thumb-radius);
+  margin: var(--jp-scrollbar-thumb-margin);
+}
+
+body[data-jp-theme-name='JupyterLab Night Pink'] ::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(var(--jp-scrollbar-thumb-color), 0.7);
+}
+
+/* Notebook cells */
+body[data-jp-theme-name='JupyterLab Night Pink'] .jp-Notebook {
+  background-color: var(--jp-layout-color0);
+}
+
+body[data-jp-theme-name='JupyterLab Night Pink'] .jp-Cell {
+  background-color: var(--jp-layout-color1);
+  border-left: 3px solid transparent;
+}
+
+body[data-jp-theme-name='JupyterLab Night Pink'] .jp-Cell.jp-mod-active {
+  border-left-color: var(--jp-brand-color1);
+}
+
+body[data-jp-theme-name='JupyterLab Night Pink'] .jp-Cell:hover {
+  background-color: var(--jp-layout-color2);
+}
+
+/* Code cells */
+body[data-jp-theme-name='JupyterLab Night Pink'] .jp-CodeCell {
+  background-color: var(--jp-layout-color1);
+}
+
+body[data-jp-theme-name='JupyterLab Night Pink'] .jp-Cell-inputArea {
+  background-color: var(--jp-cell-editor-background);
+}
+
+body[data-jp-theme-name='JupyterLab Night Pink'] .jp-InputArea-editor {
+  border: 1px solid var(--jp-cell-editor-border-color);
+  border-radius: var(--jp-border-radius);
+}
+
+body[data-jp-theme-name='JupyterLab Night Pink'] .jp-mod-active .jp-InputArea-editor {
+  border-color: var(--jp-cell-editor-active-border-color);
+  box-shadow: var(--jp-cell-editor-box-shadow);
+}
+
+/* Markdown cells */
+body[data-jp-theme-name='JupyterLab Night Pink'] .jp-MarkdownCell {
+  background-color: var(--jp-layout-color1);
+}
+
+body[data-jp-theme-name='JupyterLab Night Pink'] .jp-MarkdownCell .jp-InputArea-editor {
+  background-color: var(--jp-cell-editor-background);
+}
+
+/* Sidebar */
+body[data-jp-theme-name='JupyterLab Night Pink'] .jp-SideBar {
+  background-color: var(--jp-layout-color1);
+  border-right: 1px solid var(--jp-border-color1);
+}
+
+/* Tab bar */
+body[data-jp-theme-name='JupyterLab Night Pink'] .jp-TabBar {
+  background-color: var(--jp-layout-color1);
+}
+
+body[data-jp-theme-name='JupyterLab Night Pink'] .jp-TabBar-tab {
+  background-color: var(--jp-layout-color2);
+  border-right: 1px solid var(--jp-border-color1);
+}
+
+body[data-jp-theme-name='JupyterLab Night Pink'] .jp-TabBar-tab:hover:not(.jp-mod-active) {
+  background-color: var(--jp-layout-color3);
+}
+
+body[data-jp-theme-name='JupyterLab Night Pink'] .jp-TabBar-tab.jp-mod-active {
+  background-color: var(--jp-layout-color0);
+  border-bottom: 2px solid var(--jp-brand-color1);
+}
+
+/* Toolbar */
+body[data-jp-theme-name='JupyterLab Night Pink'] .jp-Toolbar {
+  background-color: var(--jp-toolbar-background);
+  border-bottom: 1px solid var(--jp-toolbar-border-color);
+}
+
+body[data-jp-theme-name='JupyterLab Night Pink'] .jp-Toolbar-item.jp-Toolbar-spacer {
+  background-color: var(--jp-toolbar-background);
+}
+
+/* Buttons */
+body[data-jp-theme-name='JupyterLab Night Pink'] .jp-Button {
+  background-color: var(--jp-layout-color3);
+  color: var(--jp-ui-font-color0);
+  border: 1px solid var(--jp-border-color2);
+}
+
+body[data-jp-theme-name='JupyterLab Night Pink'] .jp-Button:hover {
+  background-color: var(--jp-layout-color4);
+  border-color: var(--jp-brand-color1);
+}
+
+body[data-jp-theme-name='JupyterLab Night Pink'] .jp-Button.jp-mod-accept {
+  background-color: var(--jp-brand-color1);
+  color: var(--jp-ui-font-color0);
+}
+
+body[data-jp-theme-name='JupyterLab Night Pink'] .jp-Button.jp-mod-accept:hover {
+  background-color: var(--jp-brand-color0);
+}
+
+/* Menu */
+body[data-jp-theme-name='JupyterLab Night Pink'] .jp-Menu {
+  background-color: var(--jp-layout-color1);
+  box-shadow: var(--jp-elevation-z8);
+}
+
+body[data-jp-theme-name='JupyterLab Night Pink'] .jp-Menu-item {
+  color: var(--jp-ui-font-color0);
+}
+
+body[data-jp-theme-name='JupyterLab Night Pink'] .jp-Menu-item:hover {
+  background-color: var(--jp-layout-color3);
+}
+
+body[data-jp-theme-name='JupyterLab Night Pink'] .jp-Menu-item.jp-mod-active {
+  background-color: var(--jp-brand-color1);
+  color: var(--jp-ui-font-color0);
+}
+
+/* File browser */
+body[data-jp-theme-name='JupyterLab Night Pink'] .jp-FileBrowser {
+  background-color: var(--jp-layout-color1);
+}
+
+body[data-jp-theme-name='JupyterLab Night Pink'] .jp-DirListing-item:hover {
+  background-color: var(--jp-layout-color3);
+}
+
+body[data-jp-theme-name='JupyterLab Night Pink'] .jp-DirListing-item.jp-mod-selected {
+  background-color: rgba(255, 110, 199, 0.25);
+}
+
+/* Terminal */
+body[data-jp-theme-name='JupyterLab Night Pink'] .jp-Terminal {
+  background-color: var(--jp-terminal-background-color);
+  color: var(--jp-terminal-foreground-color);
+}
+
+/* Status bar */
+body[data-jp-theme-name='JupyterLab Night Pink'] .jp-StatusBar {
+  background-color: var(--jp-layout-color1);
+  border-top: 1px solid var(--jp-border-color1);
+}
+
+/* Dialog */
+body[data-jp-theme-name='JupyterLab Night Pink'] .jp-Dialog {
+  background-color: var(--jp-dialog-background);
+}
+
+body[data-jp-theme-name='JupyterLab Night Pink'] .jp-Dialog-content {
+  background-color: var(--jp-layout-color1);
+  color: var(--jp-ui-font-color0);
+}
+
+/* Inputs */
+body[data-jp-theme-name='JupyterLab Night Pink'] .jp-InputGroup input {
+  background-color: var(--jp-input-background);
+  color: var(--jp-ui-font-color0);
+  border: 1px solid var(--jp-input-border-color);
+}
+
+body[data-jp-theme-name='JupyterLab Night Pink'] .jp-InputGroup input:focus {
+  border-color: var(--jp-input-active-border-color);
+  box-shadow: 0 0 0 1px var(--jp-input-active-border-color);
+}
+
+/* Code mirror editor */
+body[data-jp-theme-name='JupyterLab Night Pink'] .cm-editor {
+  background-color: var(--jp-cell-editor-background);
+  color: var(--jp-mirror-editor-variable-color);
+}
+
+body[data-jp-theme-name='JupyterLab Night Pink'] .cm-gutters {
+  background-color: var(--jp-layout-color2);
+  border-right: 1px solid var(--jp-border-color1);
+  color: var(--jp-ui-font-color2);
+}
+
+body[data-jp-theme-name='JupyterLab Night Pink'] .cm-activeLineGutter {
+  background-color: var(--jp-layout-color3);
+}
+
+body[data-jp-theme-name='JupyterLab Night Pink'] .cm-activeLine {
+  background-color: rgba(255, 110, 199, 0.1);
+}
+
+body[data-jp-theme-name='JupyterLab Night Pink'] .cm-selectionBackground {
+  background-color: var(--jp-selection-color) !important;
+}
+
+body[data-jp-theme-name='JupyterLab Night Pink'] .cm-focused .cm-selectionBackground {
+  background-color: var(--jp-selection-color) !important;
+}
+
+/* Search highlight */
+body[data-jp-theme-name='JupyterLab Night Pink'] .cm-searchMatch {
+  background-color: var(--jp-search-unselected-match-background-color);
+  border: 1px solid var(--jp-brand-color1);
+}
+
+body[data-jp-theme-name='JupyterLab Night Pink'] .cm-searchMatch-selected {
+  background-color: var(--jp-search-selected-match-background-color);
+  color: var(--jp-search-selected-match-color);
+}
+
+/* Output area */
+body[data-jp-theme-name='JupyterLab Night Pink'] .jp-OutputArea {
+  background-color: var(--jp-layout-color1);
+}
+
+body[data-jp-theme-name='JupyterLab Night Pink'] .jp-OutputArea-output {
+  background-color: var(--jp-layout-color0);
+  color: var(--jp-content-font-color0);
+}
+
+/* Completion */
+body[data-jp-theme-name='JupyterLab Night Pink'] .jp-Completer {
+  background-color: var(--jp-layout-color2);
+  box-shadow: var(--jp-elevation-z8);
+}
+
+body[data-jp-theme-name='JupyterLab Night Pink'] .jp-Completer-item:hover {
+  background-color: var(--jp-layout-color3);
+}
+
+body[data-jp-theme-name='JupyterLab Night Pink'] .jp-Completer-item.jp-mod-active {
+  background-color: var(--jp-brand-color1);
+  color: var(--jp-ui-font-color0);
+}

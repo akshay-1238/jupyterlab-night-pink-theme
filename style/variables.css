@@ -1,0 +1,237 @@
+/*
+ * Night Pink Theme Variables
+ * Color scheme inspired by VS Code Night Pink theme
+ */
+
+:root {
+  /* Background colors - Dark pink/purple base */
+  --jp-layout-color0: #1a0f1f;
+  --jp-layout-color1: #241729;
+  --jp-layout-color2: #2d1f33;
+  --jp-layout-color3: #3a2842;
+  --jp-layout-color4: #4a3152;
+
+  /* Brand colors - Pink accent */
+  --jp-brand-color0: #ff6ec7;
+  --jp-brand-color1: #ff5bb8;
+  --jp-brand-color2: #ff48a9;
+  --jp-brand-color3: #ff359a;
+  --jp-brand-color4: #e6308a;
+
+  /* UI colors */
+  --jp-ui-font-color0: #f0e6f6;
+  --jp-ui-font-color1: #d4c5de;
+  --jp-ui-font-color2: #b8a4c6;
+  --jp-ui-font-color3: #9c83ae;
+
+  --jp-ui-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica,
+    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+
+  /* Content colors */
+  --jp-content-font-color0: #f0e6f6;
+  --jp-content-font-color1: #d4c5de;
+  --jp-content-font-color2: #b8a4c6;
+  --jp-content-font-color3: #9c83ae;
+
+  /* Code editor colors - Syntax highlighting */
+  --jp-mirror-editor-keyword-color: #ff6ec7;
+  --jp-mirror-editor-atom-color: #bd93f9;
+  --jp-mirror-editor-number-color: #f1fa8c;
+  --jp-mirror-editor-def-color: #50fa7b;
+  --jp-mirror-editor-variable-color: #f0e6f6;
+  --jp-mirror-editor-variable-2-color: #8be9fd;
+  --jp-mirror-editor-variable-3-color: #ffb86c;
+  --jp-mirror-editor-punctuation-color: #f0e6f6;
+  --jp-mirror-editor-property-color: #8be9fd;
+  --jp-mirror-editor-operator-color: #ff79c6;
+  --jp-mirror-editor-comment-color: #6272a4;
+  --jp-mirror-editor-string-color: #ff79c6;
+  --jp-mirror-editor-string-2-color: #ffb86c;
+  --jp-mirror-editor-meta-color: #f1fa8c;
+  --jp-mirror-editor-qualifier-color: #50fa7b;
+  --jp-mirror-editor-builtin-color: #8be9fd;
+  --jp-mirror-editor-bracket-color: #f0e6f6;
+  --jp-mirror-editor-tag-color: #ff6ec7;
+  --jp-mirror-editor-attribute-color: #50fa7b;
+  --jp-mirror-editor-header-color: #bd93f9;
+  --jp-mirror-editor-quote-color: #ff79c6;
+  --jp-mirror-editor-link-color: #8be9fd;
+  --jp-mirror-editor-error-color: #ff5555;
+
+  /* Cell colors */
+  --jp-cell-editor-background: #1e1429;
+  --jp-cell-editor-border-color: #3a2842;
+  --jp-cell-editor-box-shadow: inset 0 0 2px #ff6ec7;
+  --jp-cell-editor-active-background: #241729;
+  --jp-cell-editor-active-border-color: #ff6ec7;
+
+  --jp-cell-prompt-font-family: 'Source Code Pro', monospace;
+
+  /* Notebook colors */
+  --jp-notebook-multiselected-color: rgba(255, 110, 199, 0.24);
+
+  /* Rendermime colors */
+  --jp-rendermime-error-background: rgba(255, 85, 85, 0.28);
+  --jp-rendermime-table-row-background: #1e1429;
+  --jp-rendermime-table-row-hover-background: #2d1f33;
+
+  /* Scrollbar colors */
+  --jp-scrollbar-background-color: #241729;
+  --jp-scrollbar-thumb-color: 107, 47, 132; /* RGB for rgba */
+  --jp-scrollbar-thumb-margin: 3.5px;
+  --jp-scrollbar-thumb-radius: 9px;
+
+  /* Dialog colors */
+  --jp-dialog-background: rgba(26, 15, 31, 0.95);
+
+  /* Console colors */
+  --jp-console-padding: 10px;
+
+  /* Toolbar colors */
+  --jp-toolbar-background: #1a0f1f;
+  --jp-toolbar-border-color: #3a2842;
+  --jp-toolbar-micro-height: 8px;
+  --jp-toolbar-box-shadow: 0px 0px 2px 0px rgba(255, 110, 199, 0.24);
+
+  /* Statusbar */
+  --jp-statusbar-height: 24px;
+
+  /* Input colors */
+  --jp-input-background: #1e1429;
+  --jp-input-border-color: #3a2842;
+  --jp-input-active-background: #241729;
+  --jp-input-active-border-color: #ff6ec7;
+
+  /* General border radius */
+  --jp-border-radius: 4px;
+
+  /* Borders */
+  --jp-border-width: 1px;
+  --jp-border-color0: #3a2842;
+  --jp-border-color1: #4a3152;
+  --jp-border-color2: #5a3f62;
+  --jp-border-color3: #6a4d72;
+
+  /* Shadows */
+  --jp-shadow-base-lightness: 0;
+  --jp-shadow-umbra-color: rgba(255, 110, 199, 0.1);
+  --jp-shadow-penumbra-color: rgba(255, 110, 199, 0.06);
+  --jp-shadow-ambient-color: rgba(255, 110, 199, 0.04);
+
+  /* Elevation shadows */
+  --jp-elevation-z0: none;
+  --jp-elevation-z1: 0px 2px 1px -1px var(--jp-shadow-umbra-color),
+    0px 1px 1px 0px var(--jp-shadow-penumbra-color),
+    0px 1px 3px 0px var(--jp-shadow-ambient-color);
+  --jp-elevation-z2: 0px 3px 1px -2px var(--jp-shadow-umbra-color),
+    0px 2px 2px 0px var(--jp-shadow-penumbra-color),
+    0px 1px 5px 0px var(--jp-shadow-ambient-color);
+  --jp-elevation-z4: 0px 2px 4px -1px var(--jp-shadow-umbra-color),
+    0px 4px 5px 0px var(--jp-shadow-penumbra-color),
+    0px 1px 10px 0px var(--jp-shadow-ambient-color);
+  --jp-elevation-z6: 0px 3px 5px -1px var(--jp-shadow-umbra-color),
+    0px 6px 10px 0px var(--jp-shadow-penumbra-color),
+    0px 1px 18px 0px var(--jp-shadow-ambient-color);
+  --jp-elevation-z8: 0px 5px 5px -3px var(--jp-shadow-umbra-color),
+    0px 8px 10px 1px var(--jp-shadow-penumbra-color),
+    0px 3px 14px 2px var(--jp-shadow-ambient-color);
+  --jp-elevation-z12: 0px 7px 8px -4px var(--jp-shadow-umbra-color),
+    0px 12px 17px 2px var(--jp-shadow-penumbra-color),
+    0px 5px 22px 4px var(--jp-shadow-ambient-color);
+  --jp-elevation-z16: 0px 8px 10px -5px var(--jp-shadow-umbra-color),
+    0px 16px 24px 2px var(--jp-shadow-penumbra-color),
+    0px 6px 30px 5px var(--jp-shadow-ambient-color);
+  --jp-elevation-z20: 0px 10px 13px -6px var(--jp-shadow-umbra-color),
+    0px 20px 31px 3px var(--jp-shadow-penumbra-color),
+    0px 8px 38px 7px var(--jp-shadow-ambient-color);
+  --jp-elevation-z24: 0px 11px 15px -7px var(--jp-shadow-umbra-color),
+    0px 24px 38px 3px var(--jp-shadow-penumbra-color),
+    0px 9px 46px 8px var(--jp-shadow-ambient-color);
+
+  /* Inverse colors */
+  --jp-inverse-layout-color0: #f0e6f6;
+  --jp-inverse-layout-color1: #d4c5de;
+  --jp-inverse-layout-color2: #b8a4c6;
+  --jp-inverse-layout-color3: #9c83ae;
+  --jp-inverse-layout-color4: #806b96;
+
+  /* Info colors */
+  --jp-info-color0: #3d7dca;
+  --jp-info-color1: #2a67b1;
+  --jp-info-color2: #1b5299;
+  --jp-info-color3: #0e3d80;
+
+  /* Success colors */
+  --jp-success-color0: #55a952;
+  --jp-success-color1: #41933e;
+  --jp-success-color2: #2e7d2b;
+  --jp-success-color3: #1c6719;
+
+  /* Warning colors */
+  --jp-warn-color0: #ffa726;
+  --jp-warn-color1: #fb8c00;
+  --jp-warn-color2: #ef6c00;
+  --jp-warn-color3: #e65100;
+
+  /* Error colors */
+  --jp-error-color0: #ff5555;
+  --jp-error-color1: #f44336;
+  --jp-error-color2: #e53935;
+  --jp-error-color3: #d32f2f;
+
+  /* Selection colors */
+  --jp-selection-color: rgba(255, 110, 199, 0.35);
+
+  /* Accent colors */
+  --jp-accent-color0: #ff6ec7;
+  --jp-accent-color1: #ff5bb8;
+  --jp-accent-color2: #ff48a9;
+  --jp-accent-color3: #ff359a;
+
+  /* Search/match colors */
+  --jp-search-selected-match-background-color: #ff6ec7;
+  --jp-search-selected-match-color: #1a0f1f;
+  --jp-search-unselected-match-background-color: rgba(255, 110, 199, 0.35);
+  --jp-search-unselected-match-color: #f0e6f6;
+
+  /* Icon colors */
+  --jp-icon-contrast-color0: #f0e6f6;
+  --jp-icon-contrast-color1: #d4c5de;
+  --jp-icon-contrast-color2: #b8a4c6;
+  --jp-icon-contrast-color3: #9c83ae;
+
+  /* Code mirror specific */
+  --jp-code-font-family: 'Source Code Pro', 'Consolas', 'Monaco', 'Courier New',
+    monospace;
+  --jp-code-font-size: 13px;
+  --jp-code-line-height: 1.4;
+  --jp-code-padding: 5px;
+  --jp-code-cursor-width0: 2px;
+  --jp-code-cursor-width1: 3px;
+  --jp-code-cursor-width2: 5px;
+
+  /* Terminal colors */
+  --jp-terminal-background-color: #1a0f1f;
+  --jp-terminal-foreground-color: #f0e6f6;
+  --jp-terminal-cursor-color: #ff6ec7;
+  --jp-terminal-cursor-blink-color: rgba(255, 110, 199, 0.5);
+  --jp-terminal-selection-background-color: rgba(255, 110, 199, 0.35);
+
+  /* ANSI colors */
+  --jp-ansi-black: #1a0f1f;
+  --jp-ansi-red: #ff5555;
+  --jp-ansi-green: #50fa7b;
+  --jp-ansi-yellow: #f1fa8c;
+  --jp-ansi-blue: #8be9fd;
+  --jp-ansi-magenta: #ff79c6;
+  --jp-ansi-cyan: #8be9fd;
+  --jp-ansi-white: #f0e6f6;
+  --jp-ansi-black-intense: #3a2842;
+  --jp-ansi-red-intense: #ff6e6e;
+  --jp-ansi-green-intense: #69ff94;
+  --jp-ansi-yellow-intense: #ffffa5;
+  --jp-ansi-blue-intense: #a4ffff;
+  --jp-ansi-magenta-intense: #ff92df;
+  --jp-ansi-cyan-intense: #a4ffff;
+  --jp-ansi-white-intense: #ffffff;
+}

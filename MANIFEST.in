@@ -1,0 +1,21 @@
+include LICENSE
+include README.md
+include pyproject.toml
+include package.json
+include tsconfig.json
+include install.json
+
+graft jupyterlab_night_pink_theme/labextension
+
+# Exclude build files
+prune **/node_modules
+prune lib
+prune .github
+
+# Include source files
+graft src
+graft style
+
+# Exclude compiled files
+global-exclude *.py[cod]
+global-exclude __pycache__
